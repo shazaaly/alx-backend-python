@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""a script to Define and annotate variables with specified values:"""
+"""Contains definition of variables with specified values and annotations."""
 
 a: int = 1
 pi: float = 3.14
