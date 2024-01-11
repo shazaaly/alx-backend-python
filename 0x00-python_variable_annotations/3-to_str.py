@@ -15,6 +15,5 @@ def to_str (n:float)-> str:
 		str: string
 	"""
 
-
 	return str(n)
 
