@@ -4,10 +4,10 @@ that takes a string k and an int OR float
 as arguments and returns a tuple."""
 
 
-from typing import List, Union, Tupple
+from typing import List, Union, Tuple
 
 
-def to_kv(k: str, v: Union[int, float]) -> Tupple[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """ a type-annotated function
     that takes a string k and an int OR float v
     as arguments and returns a tuple.
