@@ -18,7 +18,7 @@ Example:
 
 
 import random
-from typing import Generator
+from typing import Generator, List
 async_generator = __import__('0-async_generator').async_generator
 
 
