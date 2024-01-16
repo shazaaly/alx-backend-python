@@ -11,7 +11,8 @@ untime and return it.
 """
 
 
-import random, asyncio
+import random
+import asyncio
 from time import time
 from typing import Generator, List
 async_comprehension = __import__('1-async_comprehension').async_comprehension
@@ -34,5 +35,3 @@ measure_runtime should measure the total runtime and return it.
     time_after = time()
 
     return time_after - time_before
-
-
