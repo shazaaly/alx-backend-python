@@ -26,12 +26,8 @@ measure_runtime should measure the total runtime and return it.
 
  """
     time_before = time()
-    res = await asyncio.gather(
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-    )
+    task = [async_comprehension() for i in range(4)]
+    res = await asyncio.gather(*task)
     time_after = time()
 
-    return time_after - time_before
+    return (time_after - time_before)
