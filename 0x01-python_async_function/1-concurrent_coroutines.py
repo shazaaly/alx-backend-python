@@ -20,4 +20,4 @@ in ascending order without using sort() because of concurrency.
     for task in completed:
         result = await task
         sorted_tasks.append(result)
-    return sorted_tasks
+    return sorted_tasks # list of delay of tasks sorte as completed
