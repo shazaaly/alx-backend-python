@@ -10,7 +10,8 @@ from typing import List
 import asyncio
 
 async def wait_n(n, max_delay) -> List[float]:
-    """_summary_
+    """return the list of all the delays (float values).
+in ascending order without using sort() because of concurrency.
     """
     sorted_tasks = []
     tasks = [wait_random(max_delay) for _ in range(n)]
