@@ -5,9 +5,10 @@
      (max_delay, with a default value of 10)
     """
 
-wait_random = __import__('0-basic_async_syntax').wait_random
 from typing import List
 import asyncio
+wait_random = __import__('0-basic_async_syntax').wait_random
+
 
 async def wait_n(n, max_delay) -> List[float]:
     """return the list of all the delays (float values).
