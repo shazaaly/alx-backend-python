@@ -76,3 +76,5 @@ This command would run the `TestAccessNestedMap` tests.
 ### Conclusion
 
 This script serves as a starting point for creating a customizable testing tool for developers. It can be further enhanced by adding more command line options, such as verbosity levels, running all tests within a specific file, or even integrating with CI/CD pipelines for automated testing environments.
+
+[Blog Post:](https://shazaali.substack.com/p/0x03-unittests-and-integration-tests)
