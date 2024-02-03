@@ -77,6 +77,9 @@ def memoize(fn: Callable) -> Callable:
 
 
 
-print(access_nested_map({"a": 1}, ("a",)))
-print(access_nested_map({"a": {"b": 2}}, path=("a",)))
-print(access_nested_map({"a": {"b": 2}}, path=("a", "b")))
+# print(access_nested_map({"a": 1}, ("a",)))
+# print(access_nested_map({"a": {"b": 2}}, path=("a",)))
+# print(access_nested_map({"a": {"b": 2}}, path=("a", "b")))
+
+#print(access_nested_map({}, path=("a",)))
+# print(access_nested_map({"a": 1}, path=("a", "b")))
