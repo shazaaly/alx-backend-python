@@ -1,9 +1,13 @@
-a = []
-b = a
+from unittest.mock import patch, PropertyMock
+import unittest
 
-print(id(a))
-print(id(b))
+class MyTestCase(unittest.TestCase):
+    def test_my_property(self):
+        with patch.object(MyClass, 'my_property', new_callable=PropertyMock) as mock_property:
+            mock_property.return_value = 'mocked value'
+            
+            instance = MyClass()
+            self.assertEqual(instance.my_property, 'mocked value')
 
-a.append(123)
-print(a)
-print(b)
+if __name__ == '__main__':
+    unittest.main()
